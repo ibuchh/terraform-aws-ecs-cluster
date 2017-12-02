@@ -16,28 +16,28 @@ variable "ecs-key-pair-name" {}
 //----------------------------------------------------------------------
 
 variable "autoscaling-group-name" {
-    description = "The name for the autoscaling group for the cluster."
-    default     = "mesh-ecs-asg"
+  description = "The name for the autoscaling group for the cluster."
+  default     = "mesh-ecs-asg"
 }
 
 variable "max-instance-size" {
-    description = "The name for the autoscaling group for the cluster."
-    default     = 5
+  description = "The name for the autoscaling group for the cluster."
+  default     = 5
 }
 
 variable "min-instance-size" {
-    description = "The name for the autoscaling group for the cluster."
-    default     = 2
+  description = "The name for the autoscaling group for the cluster."
+  default     = 2
 }
 
 variable "desired-capacity" {
-    description = "The name for the autoscaling group for the cluster."
-    default     = 3
+  description = "The name for the autoscaling group for the cluster."
+  default     = 3
 }
 
 variable "health-check-grace-period" {
-    description = "The name for the autoscaling group for the cluster."
-    default     = 300
+  description = "The name for the autoscaling group for the cluster."
+  default     = 300
 }
 
 //----------------------------------------------------------------------
@@ -45,13 +45,13 @@ variable "health-check-grace-period" {
 //----------------------------------------------------------------------
 
 variable "load-balancer-name" {
-    description = "The name for the autoscaling group for the cluster."
-    default     = "mesh-ecs-load-balancer"
+  description = "The name for the autoscaling group for the cluster."
+  default     = "mesh-ecs-load-balancer"
 }
 
 variable "target-group-name" {
-    description = "The name for the autoscaling group for the cluster."
-    default     = "mesh-ecs-target-group"
+  description = "The name for the autoscaling group for the cluster."
+  default     = "mesh-ecs-target-group"
 }
 
 //----------------------------------------------------------------------
@@ -59,16 +59,16 @@ variable "target-group-name" {
 //----------------------------------------------------------------------
 
 variable "launch-configuration-name" {
-    description = "The name for the autoscaling group for the cluster."
-    default = "mesh-ecs-launch-configuration"
+  description = "The name for the autoscaling group for the cluster."
+  default     = "mesh-ecs-launch-configuration"
 }
 
 variable "image-id" {
-    description = "The name for the autoscaling group for the cluster."
-    default = "ami-d61027ad"
+  description = "The name for the autoscaling group for the cluster."
+  default     = "ami-d61027ad"
 }
 
 variable "instance-type" {
-    description = "The name for the autoscaling group for the cluster."
-    default = "t2.medium"
+  description = "The name for the autoscaling group for the cluster."
+  default     = "t2.medium"
 }
