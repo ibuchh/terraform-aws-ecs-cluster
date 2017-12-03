@@ -2,7 +2,15 @@
 
 This repository contains `Terrorform` configuration files that provide for standing up an AWS Elastic Container Service Cluster, meant for deploying a docker image. 
 
-## Use 
+## Use - Create all resources together
+
+
+```
+terraform apply 
+```
+
+
+## Use - Create resources in sequence
 
 Configure IAM roles.
 
