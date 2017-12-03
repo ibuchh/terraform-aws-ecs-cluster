@@ -4,10 +4,23 @@ This repository contains `Terrorform` configuration files that provide for stand
 
 ## Use 
 
+Configure IAM roles.
+
+```
+terraform apply -target=module.iam
+```
+
+
 Configure a new VPC.
 
 ```
 terraform apply -target=module.vpc
+```
+
+Configure the auto scaling group and launch configuration via EC2.
+
+```
+terraform apply -target=module.ec2
 ```
 
 Configure a new ECS Cluster with a service.
@@ -16,8 +29,3 @@ Configure a new ECS Cluster with a service.
 terraform apply -target=module.ecs
 ```
 
-Configure the auto scaling group and launch configuration via EC2.
-
-```
-terraform apply -target=module.ec2
-```
