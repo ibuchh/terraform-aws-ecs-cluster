@@ -5,5 +5,10 @@ variable "ecs-cluster-name" {
 
 variable "ecs-key-pair-name" {
   description = "The name for the cluster."
-  default     = "kevin-test-pair"
+  default     = "ecs-key"
+}
+
+variable "aws_region" {
+  description = " The name for the region"
+  default     = "us-west-2"
 }
