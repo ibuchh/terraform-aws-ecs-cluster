@@ -1,6 +1,6 @@
 # Terraform ECS Cluster
 
-This repository contains `Terrorform` configuration files that provide for standing up an AWS Elastic Container Service Cluster, meant for deploying a docker image. 
+This repository contains `Terrorform` configuration files that provide for standing up an AWS Elastic Container Service Cluster, meant for deploying a docker image in us-west-2 region.
 
 ## Use - Create all resources together
 
