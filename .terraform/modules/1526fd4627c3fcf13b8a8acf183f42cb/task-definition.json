@@ -1,0 +1,21 @@
+[
+    {
+        "environment": [],
+        "name": "simple-app",
+        "image": "ibuchh/aws-ecs-sample",
+        "cpu": 100,
+        "memory": 500,
+        "portMappings": [
+            {
+                "containerPort": 80,
+                "hostPort": 80
+            }
+        ],
+        "entryPoint": [
+            "/usr/sbin/apache2",
+            "-D",
+            "FOREGROUND"
+        ],
+        "essential": true
+    }
+]
