@@ -26,6 +26,12 @@ module "ec2" {
 module "ecs" {
   source = "./ecs"
 
+  //depends_on = [
+  //  "${module.ec2.ecs-target-group-arn}",
+  //]
+
+  //wait_on = "${module.ec2.ecs-target-group-arn}"
+  
   ecs-cluster-name       = "${var.ecs-cluster-name}"
   ecs-load-balancer-name = "${module.ec2.ecs-load-balancer-name}"
   ecs-target-group-arn   = "${module.ec2.ecs-target-group-arn}"

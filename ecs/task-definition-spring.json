@@ -2,19 +2,14 @@
     {
         "environment": [],
         "name": "simple-app",
-        "image": "ibuchh/aws-ecs-sample",
-        "cpu": 100,
-        "memory": 500,
+        "image": "ibuchh/spring-petclinic-h2",
+        "cpu": 400,
+        "memory": 900,
         "portMappings": [
             {
                 "containerPort": 80,
                 "hostPort": 0
             }
-        ],
-        "entryPoint": [
-            "/usr/sbin/apache2",
-            "-D",
-            "FOREGROUND"
         ],
         "essential": true
     }

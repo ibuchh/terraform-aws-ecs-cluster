@@ -1,4 +1,3 @@
-
 resource "aws_ecs_service" "mesh-ecs-service" {
   name                               = "${var.ecs-service-name}"
   iam_role                           = "${var.ecs-service-role-arn}"
@@ -8,12 +7,9 @@ resource "aws_ecs_service" "mesh-ecs-service" {
   deployment_maximum_percent         = 200
   deployment_minimum_healthy_percent = 50
 
-  
-  
   load_balancer {
     target_group_arn = "${var.ecs-target-group-arn}"
     container_port   = 80
     container_name   = "simple-app"
   }
 }
-
