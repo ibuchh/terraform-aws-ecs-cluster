@@ -65,7 +65,7 @@ variable "launch-configuration-name" {
 
 variable "image-id" {
   description = "The name for the autoscaling group for the cluster."
-  default     = "ami-7114c909"
+  default     = "ami-0bf45a5f4ab05b949"
   //us-east-2 = ami-0fbd313043845c4f2
   //us-east-1 = ami-097e3d1cdb541f43e
   //us-west-2 = ami-0fb71e703258ab7eb
